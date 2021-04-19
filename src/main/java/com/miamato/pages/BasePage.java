@@ -31,5 +31,4 @@ public abstract class BasePage extends Page {
         return driver.getTitle();
     }
 
-
 }
