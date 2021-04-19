@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Training">
+    <listeners>
+        <listener class-name="com.miamato.listeners.TestResultsListener" />
+        <listener class-name="com.miamato.listeners.TestReporter" />
+    </listeners>
+    <test name="Example Edge">
+        <parameter name="browserName" value="Edge" />
+        <parameter name="testDataFileName" value="default.properties" />
+        <classes>
+            <class name="com.miamato.HomePageTitleTest" />
+            <class name="com.miamato.SearchItemTest" />
+            <class name="com.miamato.AddToCartTest" />
+            <class name="com.miamato.RemoveItemFromCartTest" />
+        </classes>
+    </test>
+    <test name="Example Chrome">
+        <parameter name="browserName" value="Chrome" />
+        <parameter name="testDataFileName" value="default.properties" />
+        <classes>
+            <class name="com.miamato.HomePageTitleTest" />
+            <class name="com.miamato.SearchItemTest" />
+            <class name="com.miamato.AddToCartTest" />
+            <class name="com.miamato.RemoveItemFromCartTest" />
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
